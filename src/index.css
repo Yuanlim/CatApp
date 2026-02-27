@@ -1,0 +1,38 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #333;
+  color: white;
+}
+
+.elms-sans-loading {
+  font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+.contextCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  width: 30px;
+  height: auto;
+}

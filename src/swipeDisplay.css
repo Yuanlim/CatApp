@@ -1,0 +1,87 @@
+.swipeContainer {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 10% 80% 10%;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.catImg {
+    border-radius: 40px;
+}
+
+.likeTipContainer {
+    color: rgb(86, 192, 86);
+    flex-direction: column;
+    margin: 30px;
+}
+
+.dislikeTipContainer {
+    color: rgb(202, 103, 103);
+    flex-direction: column;
+    margin: 30px;
+}
+
+.leftArrow {
+    animation: leftAnimation infinite 0.75s ease forwards;
+}
+
+.rightArrow {
+    animation: rightAnimation infinite 0.75s ease forwards;
+}
+
+@keyframes leftAnimation {
+
+    /* Start */
+    from {
+        transform: translateX(10px);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+
+    /* End */
+    to {
+        transform: translateX(-10px);
+        opacity: 0%;
+    }
+}
+
+@keyframes rightAnimation {
+
+    /* Start */
+    from {
+        transform: translateX(-10px);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateX(0px);
+        opacity: 100%;
+    }
+
+    /* End */
+    to {
+        transform: translateX(10px);
+        opacity: 0%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    main {
+        grid-template-columns: 20% 60% 20%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .elms-sans-loading {
+        font-size: 1.5rem;
+    }
+
+    .searchCatImg {
+        width: 75px;
+    }
+}

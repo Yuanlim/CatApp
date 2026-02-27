@@ -1,0 +1,86 @@
+.introductionContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    gap: 5px;
+    padding: 20px;
+}
+
+.bodyText {
+    font-size: 1.4rem;
+}
+
+.headerText {
+    font-size: 2rem;
+}
+
+.catWavingIconContainer {
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: catWaveAnimation 1s linear infinite alternate;
+}
+
+@keyframes catWaveAnimation {
+
+    0% {
+        transform: rotateZ(0deg)
+    }
+
+    50% {
+        transform: rotateZ(-22.5deg)
+    }
+
+    100% {
+        transform: rotateZ(-45deg)
+    }
+}
+
+.catWavingIcon {
+    display: block;
+    width: 100px;
+    height: 100px
+}
+
+.startButton {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: rgb(89, 219, 77);
+    font-weight: bold;
+}
+
+@media screen and (max-width: 600px),
+screen and (max-height: 560px) {
+    .bodyText {
+        font-size: 1.2rem;
+    }
+
+    .headerText {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 500px),
+screen and (max-height: 500px) {
+    .bodyText {
+        font-size: 1rem;
+    }
+
+    .headerText {
+        font-size: 1rem;
+    }
+
+    .catWavingIcon,
+    .catWavingIconContainer {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introductionContainer {
+        padding: 5px;
+    }
+}
